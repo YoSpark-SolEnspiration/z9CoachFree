@@ -233,7 +233,7 @@ def main():
         "can turbocharge creativity or productivity; gently pull it back if you sense burnout or tunnel vision."
     )
 
-    # — Download / Subscribe / Log —————————————————————
+    # — Download / Gate to CoachLite —————————————————————
     st.markdown("---")
     st.subheader("📥 Download Your Full Insight Report")
     pdf_bytes = generate_report({
@@ -244,19 +244,38 @@ def main():
     })
     st.download_button("Download PDF", pdf_bytes, "Z9_Insight_Report.pdf", "application/pdf")
 
-    st.subheader("📬 Get Follow-Up Coaching Tips")
-    email = st.text_input("Your email:")
-    if st.button("Subscribe"):
-        ok = subscribe_user_to_convertkit(
-            email,
-            st.secrets["convertkit_api_key"],
-            st.secrets["convertkit_form_id"]
-        )
-        st.success("✅ Subscribed!") if ok else st.error("⚠️ Subscription failed.")
+    # Gate to Z9CoachLite
+    st.markdown("---")
+    st.markdown(
+        """
+        <div style="
+        padding:20px;
+        border:2px dashed #8A2BE2;
+        border-radius:8px;
+        background:#F9F1FF;
+        text-align:center;
+        ">
+        <h3>🚀 Unlock Z9CoachLite</h3>
+        <p>Go deeper with mood tracking, trend insights, limited spiral tags & opportunity previews.</p>
+        <a href="https://your-coachlite-url/" target="_blank">
+            <button style="
+            background:#8A2BE2;
+            color:#fff;
+            padding:12px 24px;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            ">
+            Unlock CoachLite → $1/mo
+            </button>
+        </a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
+    # Log the free-tier usage
     log_and_alert(profile, auto_stage, d, i, s, c)
-
-    st.markdown("""
 © 2025 **KYLE DUSAN HENSON JR LC** + **YO SPARK: SOL ENSPIRATION LC**  
 Licensed under **Enterprise4Eternity, LC**.  
 Contact: [solenspirationin@gmail.com](mailto:solenspirationin@gmail.com)
