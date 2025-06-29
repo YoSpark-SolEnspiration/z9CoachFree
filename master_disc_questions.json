@@ -1,0 +1,482 @@
+[
+  {
+    "question": "I assert my opinion even if others disagree.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I enjoy taking charge of situations.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I make decisions quickly and confidently.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I like to challenge the status quo.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I feel energized when overcoming obstacles.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I thrive in competitive environments.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I speak up when I believe something is wrong.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I am comfortable leading others.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I focus on results and outcomes.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I push others to achieve high standards.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I stand firm under pressure.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I take responsibility for major decisions.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "D"
+  },
+  {
+    "question": "I enjoy socializing and making new friends.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I bring energy into group settings.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I often express emotions openly.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I like to share stories and experiences.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I value encouragement and recognition.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I motivate others through enthusiasm.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I focus on creating positive environments.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I adapt easily in social situations.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I enjoy being the center of attention.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I prefer open communication styles.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I enjoy collaborative brainstorming.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I trust people quickly.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "I"
+  },
+  {
+    "question": "I prefer consistency and routine.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I am loyal and dependable.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I stay calm during conflict.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I listen more than I speak.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I work well in team settings.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I support others quietly but consistently.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I feel anxious during sudden changes.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I value harmony in relationships.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I am patient when working with others.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I follow through with commitments.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I prefer helping over leading.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I like to avoid conflict.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "S"
+  },
+  {
+    "question": "I enjoy creating systems and rules.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I double-check work for errors.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I prefer facts over feelings.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I follow policies and procedures closely.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I enjoy working independently on complex tasks.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I seek clarity before acting.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I feel confident when tasks are clearly defined.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I keep emotions separate from decisions.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I respect hierarchy and structure.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I research before making choices.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I ask detailed questions to ensure accuracy.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  },
+  {
+    "question": "I take pride in precision and accuracy.",
+    "options": [
+      "Strongly Agree",
+      "Agree",
+      "Disagree",
+      "Strongly Disagree"
+    ],
+    "trait": "C"
+  }
+]

@@ -1,0 +1,5 @@
+// .vscode/settings.json
+{
+  "python.analysis.extraPaths": ["./"],
+  "python.languageServer": "Pylance"
+}
