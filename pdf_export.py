@@ -1,41 +1,28 @@
-# File: pdf_export.py
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-import io
+# ✅ File: pdf_export.py — for FREE app only
 
-def generate_report(profile_data: dict, filename: str = "Z9_Insight_Report.pdf") -> bytes:
+import pdfkit
+
+def generate_simple_report(data):
+    html = f"""
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {{ font-family: Arial, sans-serif; padding: 30px; }}
+            h1 {{ color: #4B0082; }}
+            p {{ margin-bottom: 10px; }}
+        </style>
+    </head>
+    <body>
+        <h1>Z9 Coach Free — Insight Report</h1>
+        <p><strong>Composite Trait Score:</strong> {data['trait_score']:.2f}</p>
+        <p><strong>Harmony Ratio:</strong> {data['harmony_ratio']:.2f}%</p>
+        <p><strong>Stage:</strong> {data['stage']}</p>
+        <h2>Your Trait Summary</h2>
+        <p>{data['trait_summary']}</p>
+        <p>Thank you for using Z9 Coach Free. For full visuals & coaching, upgrade to Lite or Pro.</p>
+    </body>
+    </html>
     """
-    Generate a PDF report for the user profile.
-
-    Args:
-        profile_data: Dict containing traits, charts, narratives.
-        filename: Output PDF filename (unused, for signature compatibility).
-
-    Returns:
-        Bytes of the generated PDF.
-    """
-    buffer = io.BytesIO()
-    c = canvas.Canvas(buffer, pagesize=letter)
-    width, height = letter
-
-    # Title
-    c.setFont("Helvetica-Bold", 20)
-    c.drawCentredString(width/2, height - 50, "Z9 Insight Engine Report")
-
-    # Summary section
-    c.setFont("Helvetica", 12)
-    y = height - 100
-    c.drawString(50, y, f"Composite Trait Score: {profile_data['trait_score']}")
-    y -= 20
-    c.drawString(50, y, f"Harmony Ratio: {profile_data['harmony_ratio']}%")
-    y -= 20
-    c.drawString(50, y, f"Z9 Spiral Stage: {profile_data['stage']}")
-    y -= 40
-
-    # Placeholder for chart images (user to embed externally)
-    c.drawString(50, y, "[Charts and detailed narratives omitted for brevity]")
-
-    c.showPage()
-    c.save()
-    buffer.seek(0)
-    return buffer.read()
+    pdf_bytes = pdfkit.from_string(html, False)
+    return pdf_bytes

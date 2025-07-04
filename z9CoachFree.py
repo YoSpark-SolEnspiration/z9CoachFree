@@ -1,5 +1,3 @@
-# File: z9CoachFree.py
-
 import streamlit as st
 import random
 import pandas as pd
@@ -18,7 +16,7 @@ from visuals import (
     plot_negiton_damping,
     plot_triplet_state,
 )
-from pdf_export import generate_report
+from pdf_export import generate_simple_report
 from convertkit_api import subscribe_user_to_convertkit
 
 # ——— Helpers ——————————————————————————————————————————————————
@@ -63,6 +61,14 @@ def main():
     st.title("🧠 Z9 Insight Engine — Z9 Coach Free © 2025"
              
              "⚡A New Dawn of DISC Profiles")
+    
+    # ─── 1️⃣ Mood selector ───────────────────────────────────────────────
+    mood = st.slider(
+        "🌀 How are you feeling right now? (0 = low, 10 = high)",
+        0, 10, 5, 1
+    )
+    st.markdown(f"**Your current mood level:** {mood}/10")
+    st.markdown("---")
 
     # Load all JSON sources safely up-front
     DEFAULT_SIMPLE = {f"Stage {i}": "" for i in range(1,9)}
@@ -155,7 +161,7 @@ def main():
     )
     
     st.subheader("🧩 Your Trait Summary")
-    st.markdown(summarize_trait(profile["traits"]))
+    st.markdown(summarize_trait(profile["traits"], auto_stage, mood))
     st.metric("Stable Recursion Score", profile["recursion_result"]["stable_score"])
 
     st.subheader("⚖️ Balance & Negation Metrics")
@@ -233,53 +239,66 @@ def main():
         "can turbocharge creativity or productivity; gently pull it back if you sense burnout or tunnel vision."
     )
 
-    # — Download / Gate to CoachLite —————————————————————
-    st.markdown("---")
-    st.subheader("📥 Download Your Full Insight Report")
-    pdf_bytes = generate_report({
-        "traits": profile["traits"],
-        "trait_score": profile["trait_score"],
-        "harmony_ratio": profile["harmony_ratio"],
-        "stage": auto_stage
-    })
-    st.download_button("Download PDF", pdf_bytes, "Z9_Insight_Report.pdf", "application/pdf")
-
-    # Gate to Z9CoachLite
+    # — Gate to Z9CoachLite Free Trial —————————————————————
     st.markdown("---")
     st.markdown(
         """
         <div style="
-        padding:20px;
-        border:2px dashed #8A2BE2;
-        border-radius:8px;
-        background:#F9F1FF;
-        text-align:center;
+          padding:20px;
+          border:2px dashed #8A2BE2;
+          border-radius:8px;
+          background:#F9F1FF;
+          text-align:center;
         ">
-        <h3>🚀 Unlock Z9CoachLite</h3>
-        <p>Go deeper with mood tracking, trend insights, limited spiral tags & opportunity previews.</p>
-        <a href="https://your-coachlite-url/" target="_blank">
+          <h3>🚀 Unlock Z9CoachLite</h3>
+          <p>Try our full 16-question DISC + mood-tracking mini-coach free for 7 days!</p>
+          <a href="https://your-coachlite-url/" target="_blank">
             <button style="
-            background:#8A2BE2;
-            color:#fff;
-            padding:12px 24px;
-            border:none;
-            border-radius:4px;
-            cursor:pointer;
+              background:#8A2BE2;
+              color:#fff;
+              padding:12px 24px;
+              border:none;
+              border-radius:4px;
+              cursor:pointer;
             ">
-            Unlock CoachLite → $1/mo
+              Unlock z9CoachLite → Free Trial!
             </button>
-        </a>
+          </a>
         </div>
         """,
         unsafe_allow_html=True
     )
 
-    # Log the free-tier usage
-    log_and_alert(profile, auto_stage, d, i, s, c)
-© 2025 **KYLE DUSAN HENSON JR LC** + **YO SPARK: SOL ENSPIRATION LC**  
-Licensed under **Enterprise4Eternity, LC**.  
-Contact: [solenspirationin@gmail.com](mailto:solenspirationin@gmail.com)
-""")
+    # 📌Reporting 
+    report_data = {
+        "trait_score": profile["trait_score"],
+        "harmony_ratio": profile["harmony_ratio"],
+        "stage": auto_stage,
+        "trait_summary": summarize_trait(profile["traits"], auto_stage, mood)
+    }
+
+    # 📌 Generate the simple PDF
+    pdf_bytes = generate_simple_report(report_data)
+
+    # 📌 Download button
+    st.markdown("---")
+    st.subheader("📥 Download Your Full Insight Report")
+    st.download_button(
+        "Download PDF",
+        pdf_bytes,
+        "Z9_Insight_Report.pdf",
+        "application/pdf"
+    )
+
+    # — ✅ Footer ————————————————————————————————————————————————
+    st.markdown(
+        """
+        © 2025 **KYLE DUSAN HENSON JR LC** + **YO SPARK: SOL ENSPIRATION LC**  
+        Licensed under **Enterprise4Eternity, LC**.  
+        Contact: [solenspirationin@gmail.com](mailto:solenspirationin@gmail.com)
+        """,
+        unsafe_allow_html=True
+    )
 
 if __name__ == "__main__":
     main()

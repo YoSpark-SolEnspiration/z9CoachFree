@@ -2,7 +2,7 @@
 from typing import Dict
 
 
-def summarize_trait(traits: Dict[str, float]) -> str:
+def summarize_trait(traits: dict, stage: str, mood: int) -> str:
     """
     Identify the dominant DISC trait and return a rich summary message including
     growth path and caution flag.
