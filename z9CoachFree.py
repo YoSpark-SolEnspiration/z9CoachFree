@@ -55,13 +55,25 @@ def log_and_alert(profile: dict, final_stage: str, d: float, i: float, s: float,
     st.success("✅ Your profile has been saved to the log.")
 
 # ——— Main App ——————————————————————————————————————————————————
-
+    
 def main():
     st.set_page_config(page_title="Z9 Insight Engine", layout="centered")
-    st.title("🧠 Z9 Insight Engine — Z9 Coach Free © 2025"
-             
-             "⚡A New Dawn of DISC Profiles")
-    
+    st.title("🧠 Z9 Insight Engine — Z9 CoachFree © 2025")
+
+    st.markdown("""
+    ### ⚡ Unlock a New Dawn of Self-Awareness
+
+    **Z9CoachFree** is your starting point:  
+    a quick, powerful 16-question DISC self-assessment that shows where your 
+    **Dominance**, **Influence**, **Steadiness**, and **Conscientiousness** traits 
+    align with your present stage of personal development.
+
+    Take this moment to pause — reflect honestly — and generate a clear snapshot 
+    you can **print, keep, or revisit**.  
+
+    > **This is your foundation.** The deeper coaching comes next — but first, see yourself clearly.
+    """)
+
     # ─── 1️⃣ Mood selector ───────────────────────────────────────────────
     mood = st.slider(
         "🌀 How are you feeling right now? (0 = low, 10 = high)",
